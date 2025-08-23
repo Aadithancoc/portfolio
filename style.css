@@ -240,6 +240,12 @@ i {
 }
 
 /* ---------------- RESPONSIVE ---------------- */
+/* Hide hamburger on desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile view */
 @media (max-width: 768px) {
   nav ul {
     display: none;
@@ -257,9 +263,10 @@ i {
   }
 
   .menu-toggle {
-    display: block;
-    font-size: 1.5rem;
+    display: block;   /* Show hamburger on mobile */
+    font-size: 1.8rem;
     cursor: pointer;
     color: #fff;
   }
 }
+
