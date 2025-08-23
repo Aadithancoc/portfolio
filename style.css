@@ -86,7 +86,7 @@ body.dark nav a {
    Hero Section
 ------------------------- */
 .hero {
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -96,6 +96,9 @@ body.dark nav a {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
   padding: 2rem;
+  width: auto;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 body.dark .hero {
