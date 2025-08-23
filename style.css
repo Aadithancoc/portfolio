@@ -96,8 +96,8 @@ body.dark nav a {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
   padding: 2rem;
-  width: auto;
-  margin: auto;
+  width: 100%;
+  margin: 0;
   box-sizing: border-box;
 }
 
