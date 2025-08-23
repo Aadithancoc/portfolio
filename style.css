@@ -14,6 +14,17 @@ body {
   transition: background 0.3s, color 0.3s;
 }
 
+/* Hide menu items on small screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+  }
+}
+
 /* 🌙 Dark Mode */
 body.dark {
   background: #121212;
