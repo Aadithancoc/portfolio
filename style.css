@@ -400,3 +400,8 @@ body.dark .project-card {
   from { opacity: 0; }
   to { opacity: 1; }
 }
+
+i {
+  margin-right: 8px;
+  color: #ff9800;
+}
