@@ -263,7 +263,7 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Hide nav links on mobile */
+/* Mobile Navbar */
 .nav-links {
   display: none;
   flex-direction: column;
@@ -288,12 +288,12 @@ html {
   font-weight: 500;
 }
 
-/* When toggled */
+/* Show when toggled */
 .nav-links.show {
   display: flex;
 }
 
-/* Desktop view */
+/* Desktop */
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -304,6 +304,7 @@ html {
     flex-direction: row;
     background: none;
     width: auto;
+    padding: 0;
   }
   .nav-links li {
     margin: 0 1rem;
