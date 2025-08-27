@@ -274,12 +274,21 @@ html {
   width: 200px;
   border-radius: 8px;
   text-align: center;
+  padding: 1rem 0;
+  z-index: 999;
 }
 
 .nav-links li {
   margin: 1rem 0;
 }
 
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* When toggled */
 .nav-links.show {
   display: flex;
 }
