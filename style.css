@@ -168,18 +168,6 @@ section {
   transition: transform 0.3s ease;
 }
 
-.skill-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  color: #ff9800;
-}
-
-.skill-card i {
-  margin-right: 8px;
-  color: #2575fc; /* blue accent for icons */
-}
-
-
 #skills li:hover {
   transform: translateY(-6px);
 }
@@ -274,3 +262,42 @@ i {
 html {
   scroll-behavior: smooth;
 }
+
+/* Hide nav links on mobile */
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background: #111;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.nav-links li {
+  margin: 1rem 0;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+  .nav-links {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    width: auto;
+  }
+  .nav-links li {
+    margin: 0 1rem;
+  }
+}
+
