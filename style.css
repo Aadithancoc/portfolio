@@ -114,6 +114,7 @@ body.dark .hero {
 
 .hero p {
   font-size: 1.3rem;
+  font-weight: bolder;
   margin-bottom: 2rem;
   animation: fadeInUp 1.5s ease;
 }
@@ -166,6 +167,18 @@ section {
   font-weight: 600;
   transition: transform 0.3s ease;
 }
+
+.skill-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #ff9800;
+}
+
+.skill-card i {
+  margin-right: 8px;
+  color: #2575fc; /* blue accent for icons */
+}
+
 
 #skills li:hover {
   transform: translateY(-6px);
