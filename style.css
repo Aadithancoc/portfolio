@@ -20,6 +20,10 @@ body.dark {
   color: #e0e0e0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* -------------------------
    Header & Navigation
 ------------------------- */
@@ -96,9 +100,7 @@ body.dark nav a {
   background: linear-gradient(to right, #6a11cb, #2575fc);
   color: #fff;
   padding: 2rem;
-  width: 100%;
   margin: 0;
-  box-sizing: border-box;
 }
 
 body.dark .hero {
@@ -114,7 +116,7 @@ body.dark .hero {
 
 .hero p {
   font-size: 1.3rem;
-  font-weight: bolder;
+  font-weight: 500;
   margin-bottom: 2rem;
   animation: fadeInUp 1.5s ease;
 }
@@ -139,13 +141,13 @@ body.dark .hero {
    Section Layout
 ------------------------- */
 section {
-  width: 100%;             /* Full background width */
+  width: 100%;
   padding: 4rem 2rem;
   box-sizing: border-box;
 }
 
 #about, #skills, #experience, #projects, #contact {
-  max-width: 1100px;       /* Content width */
+  max-width: 1100px;
   margin: auto;
 }
 
@@ -206,8 +208,9 @@ body.dark .experience-card {
 ------------------------- */
 .projects {
   background: linear-gradient(to right, #ffecd2, #fcb69f);
-  padding: 4rem 2rem;
   width: 100%;
+  padding: 4rem 2rem;
+  border-radius: 12px;
 }
 
 body.dark .projects {
@@ -234,7 +237,7 @@ body.dark .project-card {
 }
 
 /* -------------------------
-   Contact
+   Contact Section
 ------------------------- */
 .contact p {
   font-size: 1.1rem;
@@ -259,11 +262,20 @@ i {
   to { opacity: 1; transform: translateY(0); }
 }
 
-html {
-  scroll-behavior: smooth;
+/* -------------------------
+   Mobile Navbar
+------------------------- */
+.menu-toggle {
+  font-size: 1.8rem;
+  cursor: pointer;
+  display: block;
+  color: #fff;
 }
 
+<<<<<<< HEAD
 /* Mobile Navbar */
+=======
+>>>>>>> eeb1706 (Added navbar fixes)
 .nav-links {
   display: none;
   flex-direction: column;
@@ -293,7 +305,13 @@ html {
   display: flex;
 }
 
+<<<<<<< HEAD
 /* Desktop */
+=======
+/* -------------------------
+   Desktop Navbar
+------------------------- */
+>>>>>>> eeb1706 (Added navbar fixes)
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
@@ -310,4 +328,3 @@ html {
     margin: 0 1rem;
   }
 }
-
