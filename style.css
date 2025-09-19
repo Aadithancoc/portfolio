@@ -37,7 +37,12 @@ html {
   cursor: pointer;
 }
 
-/* Mobile navbar */
+/* Hide hamburger menu by default (desktop view) */
+.menu-toggle {
+  display: none;
+}
+
+/* Mobile navbar styles */
 @media (max-width: 768px) {
   #nav-links {
     display: none; /* hidden by default */
@@ -57,9 +62,10 @@ html {
   }
 
   .menu-toggle {
-    display: block; /* show ☰ on mobile */
+    display: block; /* show hamburger menu on mobile */
   }
 }
+
 
 /* -------------------------
    Header & Navigation
