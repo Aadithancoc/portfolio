@@ -7,9 +7,11 @@ toggleBtn.addEventListener('click', () => {
   toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
 
-const menuToggle = document.getElementById("menu-toggle");
-  const navLinks = document.getElementById("nav-links");
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-  menuToggle.addEventListener("click", () => {
-    navLinks.classList.toggle("show");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("show");
+    });
   });
