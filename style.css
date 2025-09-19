@@ -24,6 +24,38 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Navbar responsiveness for mobile */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* hide menu links by default */
+    flex-direction: column;
+    background: #111; /* background color for dropdown */
+    position: absolute;
+    top: 60px; /* adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  nav ul.active {
+    display: flex; /* show links when menu is toggled */
+  }
+
+  nav .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+  }
+}
+
+/* Hide menu-toggle on desktop */
+nav .menu-toggle {
+  display: none;
+}
+
+
 /* -------------------------
    Header & Navigation
 ------------------------- */

@@ -6,3 +6,10 @@ toggleBtn.addEventListener('click', () => {
   // Switch icon between sun/moon
   toggleBtn.textContent = document.body.classList.contains('dark') ? '☀️' : '🌙';
 });
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector("nav ul");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
