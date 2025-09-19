@@ -66,6 +66,9 @@ html {
   }
 }
 
+@media (min-width: 769px) {
+       /* desktop styles including full horizontal menu */
+   }
 
 /* -------------------------
    Header & Navigation
